@@ -9,15 +9,15 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Developement Weblog`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `irrationnelle`,
+      summary: `Frontend Developer`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    description: `A development blog`,
+    siteUrl: `https://dev.rase.blog/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `ashen_with_fire`,
     },
   },
   plugins: [
@@ -121,5 +121,18 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: `gatsby-omni-font-loader`,
+      options: {
+        enableListener: true,
+        preconnect: [`https://cdnjs.cloudflare.com`],
+        web: [
+          {
+            name: `Pretendard`,
+            file: `https://cdnjs.cloudflare.com/ajax/libs/pretendard/1.3.6/static/pretendard.css`,
+          },
+        ],
+      },
+    }
   ],
 }
